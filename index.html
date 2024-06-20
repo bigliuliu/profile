@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/css/output.css" />
+    <link rel="stylesheet" href="build/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script defer src="build/js/menu.js"></script>
+    <script defer src="build/js/email.js"></script>
+    <title>Welcome</title>
+  </head>
+  <body
+    class="flex min-w-full flex-col items-center text-white bg-zinc-900"
+  >
+    <aside
+      id="socials"
+      class="fixed left-0 top-1/3 z-10 hidden flex-col justify-center p-5 lg:flex"
+    >
+      <div id="socials-container" class="flex flex-col gap-5">
+        <!-- <a
+          href="https://www.linkedin.com/in/tanpreet-singh-jolly-b564a8232"
+          target="_blank"
+        > -->
+        <a
+        href=""
+        target="_blank"
+      > 
+          <img
+            src="build/img/linkedin.png"
+            alt="linked"
+            class="h-auto w-8 cursor-pointer rounded-lg duration-300 hover:scale-110 hover:bg-blue-700 hover:transition-all"
+          />
+        </a>
+        <!-- <a href="https://twitter.com/JollyTanpreet" target="_blank"> -->
+          <a
+          href=""
+          target="_blank"
+        > 
+          <img
+            src="build/img/twitter.png"
+            alt="twitter"
+            class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-cyan-600 hover:transition-all"
+          />
+        </a>
+        <!-- <a href="https://github.com/tanpreetjolly" target="_blank"> -->
+          <a
+          href=""
+          target="_blank"
+        > 
+          <img
+            src="build/img/footer-github.png"
+            alt="github"
+            class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all"
+          />
+        </a>
+        
+        <!-- <a href="mailto:tanpreet2002@gmailcom" target="_blank"> -->
+          <a
+          href=""
+          target="_blank"
+        > 
+          <img
+            src="build/img/mail.png"
+            alt="mail"
+            class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all"
+          />
+        </a>
+      </div>
+    </aside>
+    <header
+      class="fixed top-0 z-10 flex h-20 min-w-full justify-center p-2 text-lg text-gray-300 sm:h-24"
+    >
+      <div class="header-hero flex w-4/5 items-center justify-between">
+        <img id="logo" src="build/img/logo.jpg" alt="logo" class="block h-full" />
+        <img
+          id="menu"
+          src="build/img/menu.svg"
+          alt="menu"
+          class="block h-1/2 hover:cursor-pointer lg:hidden"
+        />
+        <nav id="navbar" class="hidden gap-8 text-xl lg:flex">
+          <a
+            href="index.html"
+            class="transition-all duration-300 hover:scale-x-105 hover:text-blue-300 hover:ease-in-out"
+            >Home
+          </a>
+          <a
+            href="#about-me"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >About
+          </a>
+          <a
+            href="#tech-stack"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >Tech Stack
+          </a>
+          <a
+            href="#projects"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >Projects
+          </a>
+          <a
+            href="#contact"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >Contact
+          </a>
+        </nav>
+      </div>
+      <div
+        id="dropdownMenu"
+        class="animate_animated animate__slideInDown fixed top-0 left-0 z-20 hidden h-screen w-full flex-col items-center text-3xl lg:hidden"
+      >
+        <ul id="links" class="toggle-list w-4/5">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="flex min-h-screen min-w-full flex-col items-center">
+      <section
+        id="hero"
+        class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full"
+      >
+        <div id="hero-wrap" class="flex justify-center lg:gap-16">
+          <div id="intro" class="mx-auto flex flex-col justify-center">
+            <h2
+              class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl"
+            >
+              Hi,
+            </h2>
+            <h2
+              class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl"
+            >
+              My name is
+            </h2>
+            <h3
+              id="name"
+              class="animate__animated animate__fadeInUp pt-1 pb-1 text-5xl sm:text-6xl md:text-7xl"
+            >
+              Tiana Lau
+            </h3>
+            <p
+              class="animate__animated animate__fadeInUp pt-3 text-2xl sm:text-3xl md:text-5xl"
+            >
+              I build things for web!
+            </p>
+            <button
+              id="contactMe"
+              class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl"
+            >
+              <a href="#contact">CONTACT ME</a>
+            </button>
+          </div>
+          <figure
+            class="animate__animated animate__fadeInRight flex flex-col justify-center"
+          >
+            <img
+              src="build/img/hero-img.png"
+              alt="hero"
+              class="hidden max-w-xs xl:block"
+            />
+          </figure>
+        </div>
+      </section>
+      <section
+        id="about-me"
+        class="flex w-full flex-col items-center justify-center gap-8 p-8"
+      >
+        <div class="aboutCard mx-auto min-h-full w-full sm:w-4/6">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl" id="about-me-caption">
+            About Me
+          </h2>
+        </div>
+        <div class="aboutCard min-h-full w-full sm:w-4/6">
+          <p class="text-lg sm:text-xl md:text-3xl lg:text-2xl mb-8">
+            Hi my name is Tiya Lu, a Front End Developer, with a passion for crafting innovative
+            solutions. I thrive in creating seamless and user-friendly applications that make a meaningful
+            impact.
+          </p>
+          <section class="mb-8">
+            <h2 class="font-bold mb-2 text-2xl">Work Experience</h2>
+            <div class="mb-5">
+                <h3 class="text-xl font-bold">- GENCI - Full Stack Developer Intern (Aug 2023 – Oct 2023)</h3>
+                <ul class="list-disc list-inside ml-4 text-lg text-gray-200">
+                    <li>Developed a Student Dashboard using Next.js, TailwindCSS, Tanstack React-Query, and other
+                        React libraries.</li>
+                    <li>Implemented a streak heatmap with Apex Charts Library to display user progress.</li>
+                    <li>Built Dashboard APIs with Node.js and Express.js, incorporating JOI input format validation.</li>
+                    <li>Worked on a Web IDE using Monaco code editor and Judge API.</li>
+                </ul>
+            </div>
+    
+            <div class="mb-4">
+                <h3 class="text-xl font-bold">- EUTOPIA - Frontend Developer Intern (Aug 2023 – Dec 2023)</h3>
+                <ul class="list-disc list-inside ml-4 text-lg  text-gray-200">
+                    <li>Leveraged React and TailwindCSS to create the complete UI along with Material-UI components.</li>
+                    <li>Integrated a rich text editor using React-Quill and also added Google Translate services.</li>
+                    <li>Utilized Redux for efficient state management and API request handling.</li>
+                    <li>Deployed the entire project on Microsoft Azure.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Position of Responsibility</h2>
+            <div class="mb-4">
+                <h3 class="text-xl font-bold">- Team Leader - Smart India Hackathon 2023 (October 2023)</h3>
+                <p class="text-gray-200">&nbsp; Led the team in SIH first round, overseeing the entire project with collaborative management.</p>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-xl font-bold">- Team Lead - GENCI (Landing Page Development) (October 2023)</h3>
+                <p class="text-gray-200">&nbsp; Directed and led a high-performing team to develop a landing page within a deadline of 48 hours.</p>
+            </div>
+        </section>
+    
+        </div>
+        <div class="w-full sm:w-4/6">
+          <button
+            class="mx-auto h-10 w-40 rounded-2xl border-2 border-blue-400 bg-transparent text-lg text-blue-200 sm:h-14 sm:w-52 sm:text-2xl"
+          >
+            <a href="#contact">CONTACT</a>
+          </button>
+        </div>
+      </section>
+      <section
+        id="tech-stack"
+        class="flex min-w-full flex-col items-center justify-center"
+      >
+        <h1 class="text-3xl sm:text-4xl md:text-5xl" id="tech-stack-caption">
+          My Tech Stack
+        </h1>
+        <p class="p-2 pt-5 text-center text-2xl text-gray-300">
+          Technologies I've been working with currently
+        </p>
+        <div
+          id="stacks"
+          class="z-0 grid w-3/4 grid-flow-col grid-rows-3 place-content-center gap-x-9 p-5"
+        >
+          <img
+            src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="https://www.datocms-assets.com/98835/1684410508-image-7.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/2275px-React.svg.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="build/img/html.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="build/img/css.png"
+            alt="ts-2"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img src="build/img/js.png" alt="ts-3" loading="lazy" class="sm:scale-75" />
+          <img
+            src="build/img/tailwind.png"
+            alt="ts-4"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="build/img/git.png"
+            alt="ts-5"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="build/img/footer-github.png"
+            alt="ts-7"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="build/img/sass.png"
+            alt="ts-8"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="relative flex min-w-full flex-col items-center gap-4 p-5"
+      >
+        <div id="caption-projects" class="text-center">
+          <p class="text-3xl sm:text-4xl md:text-5xl" id="projects-heading">
+            My Projects
+          </p>
+          <p class="p-3 text-xl text-gray-300 sm:text-2xl">
+            Things I've built so far
+          </p>
+        </div>
+        <div
+          id="project-container"
+          class="flex w-4/5 flex-wrap place-content-center justify-center gap-10"
+        >
+          <div class="">
+            <img src="" alt="" />
+            <h2 class="mx-3 pt-1 text-xl font-bold underline-offset-1">
+              Project 1
+            </h2>
+            <div
+              class="projectLinkContainer flex w-full items-center justify-between px-4"
+            >
+              <a href="">
+                <p class="underline">View Project</p>
+              </a>
+              <a href="">
+                <img src="build/img/footer-github.png" alt="" />
+              </a>
+            </div>
+            <p class="text- m-1 w-4/5 text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cum
+              natus perferendis
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="flex min-h-screen w-full flex-col items-center justify-center p-6"
+      >
+        <h2 class="text-3xl sm:text-4xl md:text-5xl">Get in Touch</h2>
+        <p class="pt-4 text-center text-2xl text-gray-300">
+          I'd love to hear from you!
+        </p>
+        <section
+          id="form-container"
+          class="flex flex-wrap items-center justify-center xl:gap-4"
+        >
+        <form id="email-form">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email ID" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+          
+          <button type="button" id="submit-btn" class="items-center justify-center">Submit</button>
+        </form>
+          <figure
+            class="m-4 hidden flex-col items-center justify-center lg:flex"
+          >
+            <img
+              src="build/img/contact.png"
+              alt="contact"
+              class="hidden max-h-full max-w-full xl:block"
+            />
+          </figure>
+        </section>
+        <img
+          src="build/img/my-socials.png"
+          alt="my-socials"
+          class="mx-auto block lg:hidden h-72"
+        />
+      </section>
+    </main>
+    <footer
+      class="flex h-14 w-4/5 items-center justify-center p-5 text-gray-200 sm:justify-between"
+    >
+      <p class="hidden sm:inline">tanpreet2002@gmail.com</p>
+      <div id="footer-img-wrap" class="flex gap-2">
+        <a href="https://github.com/tanpreetjolly" target="_blank">
+          <img src="build/img/footer-github.png" alt="github" class="h-9 w-9" />
+        </a>
+        <a href="https://www.linkedin.com/in/tanpreet-singh-jolly-b564a8232" target="_blank">
+          <img src="build/img/linkedin.png" alt="linkedin" class="h-9 w-9" />
+        </a>
+        <a href="https://twitter.com/JollyTanpreet" target="_blank">
+          <img src="build/img/twitter.png" alt="twitter" class="h-9 w-9" />
+        </a>
+      </div>
+    </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("9-9D0S522SqIcmLbr");
+      })();
+    </script>
+  </body>
+</html>

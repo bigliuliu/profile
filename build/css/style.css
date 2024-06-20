@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root{
+--font-header :'Noto Sans', sans-serif;
+--font-hero : 'Montserrat', sans-serif;
+--font-name : 'Ubuntu', sans-serif;
+--font-about : 'PT Sans', sans-serif;
+--font-menu: 'Roboto', sans-serif;
+--bg-blue : #5087CE;
+--button-bg-color : #8fbaff;
+--bg: rgba(89, 0, 255, 0.553);
+}
+
+html{
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+aside{
+    min-height: 30vh;
+    max-width: 8vw;
+    background : #65656b1b;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header{
+font-family: var(--font-header);
+min-height: 12vh;
+-webkit-backdrop-filter: blur(8px);
+backdrop-filter: blur(8px);
+}
+
+main{
+margin: 0 auto;
+margin-top: 3vh;
+}
+
+footer{
+    border-top: 3px solid #5c5c5c50;
+    min-height: 15vh;
+    
+}
+#dropdownMenu{
+    min-height: 80vh;
+    min-width: 70vw;
+    background-color: #1b1b1b;
+    animation-duration: 0.5s;
+    margin-top: 12vh;
+}
+#dropdownMenu li{
+    font-weight: 900;
+    width: 100%;
+    font-family: var(--font-menu);
+    padding: 2.5rem;
+    text-align: center;
+    
+}
+#dropdownMenu li a{
+    display: block;
+}
+#dropdownMenu li:active{
+    color: #8fbaff;
+}
+#hero{
+min-height: 80vh;
+font-family: var(--font-hero);
+}
+
+#hero-wrap{
+min-width: 65vw;
+}
+
+#name{
+font-family: var(--font-name);
+background: linear-gradient(287deg, rgba(66,148,246,1) 6%, rgba(32,105,171,1) 50%, rgba(35,255,245,1) 99%);
+background-size: cover;
+-webkit-text-fill-color: transparent;
+background-clip:text;
+-webkit-background-clip: text;
+}
+
+#about-me,  #project-container {
+min-height: 80vh;
+}
+
+#tech-stack{
+    min-height: 75vh;
+}
+
+#contact {
+    min-height: 90vh;
+}
+
+#projects{
+    min-height: 125vh;
+}
+#about-me:nth-child(2), #tech-stack p {
+font-family: var(--font-about);
+}
+
+#about-me-caption, #contact h2, #tech-stack-caption, #projects-heading {
+font-family: var(--font-name);
+}
+
+#about-me button, #contactMe {
+font-family: var(--font-name);
+color: var(--button-bg-color);
+border-color: var(--button-bg-color);
+}
+
+#about-me button:hover, #contactMe:hover, #email-form button:hover{
+    background: var(--bg-blue);
+    border: none;
+    color:  white;
+    transform: scale(1.03);
+    transition: all 0.2s linear;
+    text-shadow: 0.5px 0.5px 5px #373637;
+}
+#stacks :nth-child(n) {
+min-height: 40px;
+max-height: 110px;
+padding-bottom: 10px;
+min-width: 40px;
+}
+
+.project-card {
+width: max(300px, 24vw);
+aspect-ratio: 3/4;
+background-color: #373637;
+border-radius: 16px;
+box-shadow:1px 1px 5px rgb(96, 96, 96);
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+padding: 5px;
+font-family: var(--font-hero);
+}
+.project-card:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.project-card img{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    aspect-ratio: 1.2;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.project-card a:hover{
+    color: var(--button-bg-color);
+    transition: all 0.2s linear;
+}
+.projectLinkContainer img{
+    max-width: 30px;
+    aspect-ratio: 1;
+}
+/* forms */
+/* Set font and background color for form */
+#email-form {
+    font-family: var(--font-name);
+    /* background-color: var(--bg-blue); */
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 30vw;
+}
+
+#contact figure{
+    height: max(50vh, 300px);
+}
+/* Style for form labels */
+label {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Style for form input fields */
+input, textarea {
+    color:  black;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+textarea{
+    min-height: 125px;
+}
+
+/* Style for submit button */
+#email-form button {
+    height: 45px;
+    width: 50%;
+    border:2px solid var(--button-bg-color);
+    color: var(--button-bg-color);
+    background: transparent;
+    /* padding: 12px 20px; */
+    border-radius: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
