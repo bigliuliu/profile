@@ -31,8 +31,5 @@ A personal portfolio website created using HTML5, CSS3, JavaScript, and Tailwind
 
 ## Author
 
-[Tanpreet Singh Jolly](https://github.com/tanpreetjolly)
-
 ## License
 
-This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
