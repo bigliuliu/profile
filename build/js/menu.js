@@ -95,6 +95,8 @@ const projectList = [
     desc: "A personal portfolio created using HTML5, CSS3 and JavaScript showcasing my work.",
   },
 ];
+/* <a href=${item.live} target="_blank"><p class="text-sm lg:text-lg">View Project</p></a>
+              <a href="${item.githubLink}" target="_blank"><img src="build/img/footer-github.png" alt="github-link""></a> */
 
 // function to return project-card
 const projectContainer = document.getElementById("project-container");
@@ -106,8 +108,8 @@ function displayAllProjects(projectsList){
             <img src= ${item.img} alt=${item.title}>
             <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
             <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
-              <a href=${item.live} target="_blank"><p class="text-sm lg:text-lg">View Project</p></a>
-              <a href="${item.githubLink}" target="_blank"><img src="build/img/footer-github.png" alt="github-link""></a>
+              <p class="text-sm lg:text-lg">View Project</p>
+              <img src="build/img/footer-github.png" alt="github-link"">
             </div>
             <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
         </div>`
