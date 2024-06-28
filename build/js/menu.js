@@ -29,14 +29,14 @@ const projectList = [
     live: "",
     desc: "A Pearl Town Website mint and transaction NFT made in Vue, MySQL, SCSS and Java",
   },
-  // {
-  //   id: 8,
-  //   title: "Swift Chat App",
-  //   img: "build/img/chatapp.png",
-  //   // githubLink: "https://github.com/tanpreetjolly/swift-chat-app",
-  //   live: "https://swifty-chatty-appy.onrender.com/",
-  //   desc: "A chatapp built with WebSocket API and ws lib. MERN Stack with TailwindCSS. Feat inlcudes realtime msg exchange and user authentication with email verification.",
-  // },
+  {
+    id: 8,
+    title: "Translate App",
+    img: "build/img/translate.png",
+    // githubLink: "https://github.com/tanpreetjolly/swift-chat-app",
+    // live: "https://swifty-chatty-appy.onrender.com/",
+    desc: "A translate app integrated with Google API made in React and Tailwind CSS",
+  },
   // {
   //   id: 9,
   //   title: "Vetmedman",
