@@ -90,7 +90,7 @@ const projectList = [
     id: 4,
     title: "Portfolio Website",
     img: "build/img/portfolio-thumbnail.jpg",
-    // githubLink: "https://github.com/tanpreetjolly/portfolio/tree/master ",
+    githubLink: "https://github.com/bigliuliu/profile/tree/main",
     // live: "https://portfolio-tanpreet.netlify.app/",
     desc: "A personal portfolio created using HTML5, CSS3 and JavaScript showcasing my work.",
   },
@@ -109,7 +109,7 @@ function displayAllProjects(projectsList){
             <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
             <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
               <p class="text-sm lg:text-lg">View Project</p>
-              <img src="build/img/footer-github.png" alt="github-link"">
+              <a href="${item.githubLink}" target="_blank"><img src="build/img/footer-github.png" alt="github-link""></a>
             </div>
             <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
         </div>`
