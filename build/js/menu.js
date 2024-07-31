@@ -31,7 +31,7 @@ const projectList = [
     id: 8,
     title: "Translate App",
     img: "build/img/translate.png",
-    // githubLink: "https://github.com/tanpreetjolly/swift-chat-app",
+    githubLink: "https://github.com/bigliuliu/Tranlator",
     // live: "https://swifty-chatty-appy.onrender.com/",
     desc: "A translate app integrated with Google API made in React and Tailwind CSS",
   },
@@ -126,7 +126,7 @@ function displayAllProjects(projectsList) {
           <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
           <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
             <p class="text-sm lg:text-lg">View Project</p>
-           <img src="build/img/footer-github.png" alt="github-link"">
+          <a href="${item.githubLink}" target="_blank"><img src="build/img/footer-github.png" alt="github-link""></a>
           </div>
           <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
       </div>`;
