@@ -7,6 +7,7 @@ A personal portfolio website created using HTML5, CSS3, JavaScript, and Tailwind
 
 ## Features
 
+- Canvas Confetti
 - Fully responsive design
 - Animated sections
 - Smooth scrolling
