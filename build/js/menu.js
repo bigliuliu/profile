@@ -76,14 +76,14 @@ const projectList = [
   //   // live: "https://tributepage-tanpreet.netlify.app/",
   //   desc: "A tribute page for the freeCodeCamp RWD Certification. Created using HTML5 and CSS3.",
   // },
-  // {
-  //   id: 2,
-  //   title: "Survey Form",
-  //   img: "build/img/surveyform-thumbnail.jpg",
-  //   // githubLink: "https://github.com/tanpreetjolly/fcc-project-surveyForm",
-  //   // live: "https://surveyform-tanpreet.netlify.app/",
-  //   desc: "A replica survey form of the freeCodeCamp survey  designed using HTML5 and CSS3.",
-  // },
+  {
+    id: 2,
+    title: "React Demos",
+    img: "build/img/react-demos.png",
+    githubLink: "https://github.com/bigliuliu/react-demos",
+    live: "https://react-demos-orpin.vercel.app/",
+    desc: "A collection of ReactJS demos to help ReactJS beginners learning how to build ReactJS projects",
+  },
   {
     id: 4,
     title: "Portfolio Website",
@@ -101,17 +101,17 @@ const projectContainer = document.getElementById("project-container");
 
 function displayAllProjects(projectsList) {
   let displayProjects = projectsList.map(function (item) {
-    if (item.id === 4) {
+    if (item.id === 8) {
       return `
-        <div class="project-card" class="text-gray-300">
-            <img src= ${item.img} alt=${item.title}>
-            <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
-            <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
-            <a href=${item.live} target="_blank"><p class="text-sm lg:text-lg">View Project</p></a>
-            <a href="${item.githubLink}" target="_blank"><img src="build/img/footer-github.png" alt="github-link""></a>
-            </div>
-            <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
-        </div>`;
+      <div class="project-card" class="text-gray-300">
+          <img src= ${item.img} alt=${item.title}>
+          <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
+          <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
+            <p class="text-sm lg:text-lg">View Project</p>
+          <a href="${item.githubLink}" target="_blank"><img src="build/img/footer-github.png" alt="github-link""></a>
+          </div>
+          <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
+      </div>`;
     } else if (item.id === 5) {
       return `
     <div class="project-card" class="text-gray-300">
@@ -125,7 +125,7 @@ function displayAllProjects(projectsList) {
           <img src= ${item.img} alt=${item.title}>
           <h2 class="text-xl lg:text-2xl  font-bold mx-3 pt-1 underline underline-offset-8">${item.title}</h2>
           <div class="flex justify-between w-full px-4  projectLinkContainer items-center" >
-            <p class="text-sm lg:text-lg">View Project</p>
+          <a href=${item.live} target="_blank"><p class="text-sm lg:text-lg">View Project</p></a>
           <a href="${item.githubLink}" target="_blank"><img src="build/img/footer-github.png" alt="github-link""></a>
           </div>
           <p class="m-1 w-4/5 text-xs lg:text-base">${item.desc}</p>
@@ -139,7 +139,7 @@ function displayAllProjects(projectsList) {
     player1 = new YT.Player("player-1", {
       videoId: "KLc7isg2IyA",
     });
-  }, 1000)
+  }, 1000);
 }
 
 window.addEventListener("DOMContentLoaded", function () {
