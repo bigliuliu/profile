@@ -68,14 +68,14 @@ const projectList = [
   //   // live: "https://groceryapp-tanpreet.netlify.app/",
   //   desc: "A grocery list app build in React to add or remove tems for grocery shopping",
   // },
-  // {
-  //   id: 1,
-  //   title: "Tribute Page",
-  //   img: "build/img/tribute-thumbnail.jpg",
-  //   // githubLink: "https://github.com/tanpreetjolly/fcc-project-tributePage",
-  //   // live: "https://tributepage-tanpreet.netlify.app/",
-  //   desc: "A tribute page for the freeCodeCamp RWD Certification. Created using HTML5 and CSS3.",
-  // },
+  {
+    id: 1,
+    title: "Acme",
+    img: "build/img/hero-desktop.png",
+    githubLink: "https://github.com/bigliuliu/nextjs-dashboard",
+    live: "https://nextjs-dashboard-nine-eta-67.vercel.app/",
+    desc: "A Acme website to show dashboard, Invoices, and Customers. Created using Next.js, React.js, PostgresQL and Tailwind CSS.",
+  },
   {
     id: 2,
     title: "React Demos",
