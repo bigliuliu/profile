@@ -25,7 +25,7 @@ const projectList = [
     img: "build/img/medware.png",
     // githubLink: "https://github.com/tanpreetjolly/Medware",
     live: "",
-    desc: "A Pearl Town Website for university ,I designed independently and build with other developer,on which mint and trade NFT made in Vue, Ant Design, SCSS and Java",
+    desc: "A Pearl Town Website for university ,I designed independently and build with other developer,on which mint and trade NFT made in React.js, Ant Design, SCSS and Node.js",
   },
   {
     id: 8,
