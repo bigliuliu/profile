@@ -35,15 +35,14 @@ const projectList = [
     live: "https://tranlator-eight.vercel.app/",
     desc: "A translate app integrated with Google API made in React and Tailwind CSS",
   },
-  // {
-  //   id: 9,
-  //   title: "Vetmedman",
-  //   img: "https://i.imgur.com/aAFZsbY.png",
-  //   githubLink: "",
-  //   // live: "https://vetmedman.com",
-  //   desc: "A shopping store I created for a freelance client. GithubRepo not available for this private project",
-
-  //  },
+  {
+    id: 9,
+    title: "Food Delivery",
+    img: "build/img/food-delivery.png",
+    githubLink: "https://github.com/bigliuliu/food-delivery",
+    live: "https://food-delivery-frontend-8kro.onrender.com/",
+    desc: "a MERN project called food delivery website build with React.js, Node.js(Express.js), MongoDB and Stripe as pay API",
+   },
   //   {
   //   id: 3,
   //   title: "Landing Page - Freelance",
