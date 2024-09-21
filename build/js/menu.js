@@ -43,14 +43,14 @@ const projectList = [
     live: "https://food-delivery-frontend-8kro.onrender.com/",
     desc: "a MERN project called food delivery website build with React.js, Node.js(Express.js), MongoDB and Stripe as pay API",
    },
-  //   {
-  //   id: 3,
-  //   title: "Landing Page - Freelance",
-  //   img: "https://i.imgur.com/cAzrTyh.png",
-  //   githubLink: "",
-  //   // live: "https://genci-io.vercel.app",
-  //   desc: "A simple static landing page for a startup I worked at that. Github Repo not avaailable as per the company's terms",
-  // },
+    {
+    id: 3,
+    title: "Gemini AI clone website",
+    img: "build/img/gemini.png",
+    githubLink: "https://github.com/bigliuliu/gemini-clone",
+    live: "https://gemini-clone-smoky-seven.vercel.app/",
+    desc: "This is Gemini AI clone chat website build with React.js and Vite",
+  },
   // {
   //   id: 7,
   //   title: "Ebazar Online Store",
