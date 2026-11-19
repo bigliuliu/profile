@@ -1,7 +1,7 @@
 {
   "name": "potfolio",
   "version": "1.0.0",
-  "description": "## Live Demo The website can be viewed live at https://tanpreetsingh.netlify.app/",
+  "description": "Personal portfolio website — live at https://profile-umber-five.vercel.app/",
   "main": "tailwind.config.js",
   "scripts": {
     "server": "live-server ./ --port=8181 --host=localhost --proxy=/api:http://www.abc.com/api/",

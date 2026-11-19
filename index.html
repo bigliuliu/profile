@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script defer src="build/js/menu.js"></script>
   <script defer src="build/js/email.js"></script>
-  <title>Welcome</title>
+  <meta name="description" content="Tiana Lau — Software Engineer at Serko, building the Zeno travel platform. React, TypeScript, C# / .NET, and AI-assisted engineering with Claude Code, MCP and OpenSpec." />
+  <title>Tiana Lau — Software Engineer</title>
 </head>
 
 <body class="flex min-w-full flex-col items-center text-white bg-zinc-900">
@@ -24,7 +25,7 @@
         <img src="build/img/footer-github.png" alt="github"
           class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all" />
       </a>
-      <a href="mailto:sweetliu666@gmailcom" target="_blank">
+      <a href="mailto:sweetliu666@gmail.com" target="_blank">
         <img src="build/img/mail.png" alt="mail"
           class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all" />
       </a>
@@ -44,6 +45,9 @@
         <a href="#tech-stack"
           class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Tech Stack
         </a>
+        <a href="#ai-workflow"
+          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">AI Workflow
+        </a>
         <a href="#projects"
           class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Projects
         </a>
@@ -62,6 +66,9 @@
           <a href="#about-me">About</a>
         </li>
         <li>
+          <a href="#ai-workflow">AI Workflow</a>
+        </li>
+        <li>
           <a href="#projects">Projects</a>
         </li>
         <li>
@@ -74,6 +81,7 @@
     <section id="hero" class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full">
       <div id="hero-wrap" class="flex justify-center lg:gap-16">
         <div id="intro" class="mx-auto flex flex-col justify-center">
+          <span class="ai-badge animate__animated animate__fadeInUp">✦ AI-assisted engineer</span>
           <h2 class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl">
             Hi,
           </h2>
@@ -84,8 +92,9 @@
             Tiana Lau
           </h3>
           <p class="animate__animated animate__fadeInUp pt-3 text-2xl sm:text-3xl md:text-5xl">
-            I build things for web!
+            I build things for web — with AI in the loop.
           </p>
+          <p class="terminal-line animate__animated animate__fadeInUp"><span class="terminal-prompt">&gt;</span> Claude Code · MCP · OpenSpec · LLM review<span class="cursor"></span></p>
           <button id="contactMe"
             class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl">
             <a href="#contact">CONTACT ME</a>
@@ -104,14 +113,22 @@
       </div>
       <div class="aboutCard min-h-full w-full sm:w-4/6">
         <p class="text-lg sm:text-xl md:text-3xl lg:text-2xl mb-8">
-          Hi my name is Tiana Lau, a Front End Developer, with a passion for crafting innovative
-          solutions. I thrive in creating seamless and user-friendly applications that make a meaningful
-          impact.
+          Hi, I'm Tiana Lau — a Software Engineer at Serko, building the Zeno travel platform with React,
+          TypeScript and C# / .NET. I ship with AI in the loop: Claude Code, spec-driven development, and
+          an LLM review pipeline that keeps quality high while I move fast.
         </p>
         <section class="mb-8">
           <h2 class="font-bold mb-2 text-2xl">Work Experience</h2>
           <div class="mb-4">
-            <h3 class="text-xl font-bold">- Upwork - Freelance Developer (Oct 2023 – present)</h3>
+            <h3 class="text-xl font-bold">- Serko - Software Engineer (Nov 2025 – Present)</h3>
+            <ul class="list-disc list-inside ml-4 text-lg text-gray-200">
+              <li>Building the Zeno travel platform with React / TypeScript and C# / .NET, shipped cloud-native via Azure DevOps Pipelines to AKS.</li>
+              <li>Built event-driven automation on Azure Functions triggered by PR and Jira webhooks — deduplicated Slack notifications, a dedicated review path for SQL changes, and automatic Confluence doc sync on Jira closure, with an early-exit cost check to control LLM spend.</li>
+              <li>Ship with AI in the loop: a Claude Code plugin backed by a TypeScript MCP server (16 tools), spec-driven development with OpenSpec, and an LLM PR review pipeline that posts line-anchored inline comments against 58 repo-specific rules.</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-xl font-bold">- Upwork - Freelance Developer (Oct 2023 – Oct 2025)</h3>
             <ul class="list-disc list-inside ml-4 text-lg  text-gray-200">
               <li>Developed the website and web app for Atlas KE using Next.js and Tailwind CSS, based on finalized Figma designs. Implemented blockchain-based land and property records, user identity verification, and transaction lookup, with full responsive support.
               </li>
@@ -120,16 +137,6 @@
               </li>
             </ul>
           </div>
-          <div class="mb-5">
-            <h3 class="text-xl font-bold">- Xi'an Jiaotong University - Research Assistant (Dec 2022 – Aug 2023)</h3>
-            <ul class="list-disc list-inside ml-4 text-lg text-gray-200">
-              
-              <li>Led UX design for the Web3 Pearl NFT platform with Axure RP, collaborating with UI designers to create seamless product designs.</li>
-              <li>Architected and developed the front-end using TypeScript, VueJS integrating Ant Design for a polished UI.</li>
-              <li>Integrated Apache ECharts for dynamic line charts, enabling real-time tracking of NFT transactions and price histories.</li>
-            </ul>
-          </div>
-
           <div class="mb-4">
             <h3 class="text-xl font-bold">- DaHua - Frontend Developer (Apr 2020 – Dec 2022)</h3>
             <ul class="list-disc list-inside ml-4 text-lg  text-gray-200">
@@ -145,10 +152,6 @@
 
         <section class="mb-8">
           <h2 class="text-2xl font-bold mb-4">Position of Responsibility</h2>
-          <div class="mb-4">
-            <h3 class="text-xl font-bold">- Team Leader - Xi'an Jiaotong University 2023 (Dec 2022)</h3>
-            <p class="text-gray-200">&nbsp; Led the team to successfully release the first beta version.</p>
-          </div>
           <div class="mb-4">
             <h3 class="text-xl font-bold">- Software Engineer - DaHua (Jun 2020)</h3>
             <p class="text-gray-200">&nbsp; Efficiently completed development and self-testing.</p>
@@ -188,6 +191,39 @@
           class="sm:scale-75" />
         <img src="build/img/footer-github.png" alt="ts-7" loading="lazy" class="sm:scale-75" />
         <img src="build/img/sass.png" alt="ts-8" loading="lazy" class="sm:scale-75" />
+      </div>
+    </section>
+    <section id="ai-workflow" class="flex min-w-full flex-col items-center justify-center p-8">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl" id="ai-workflow-caption">
+        How I Work with AI
+      </h2>
+      <p class="p-2 pt-5 text-center text-2xl text-gray-300">
+        AI isn't a demo for me — it's how I ship every day
+      </p>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <h3>Claude Code Plugin</h3>
+          <p>A custom plugin backed by a TypeScript MCP server with 16 tools — project context, code search and review actions, right inside my editor.</p>
+        </div>
+        <div class="ai-card">
+          <h3>OpenSpec SDD</h3>
+          <p>Spec-driven development: every change starts from a written spec with traceable tasks, so AI-generated code stays aligned with the design.</p>
+        </div>
+        <div class="ai-card">
+          <h3>LLM PR Review</h3>
+          <p>An automated review pipeline that posts line-anchored inline comments against 58 repo-specific rules — validated by catching injected bugs.</p>
+        </div>
+      </div>
+      <div class="ai-chips">
+        <span class="ai-chip">Claude Code</span>
+        <span class="ai-chip">MCP · 16 tools</span>
+        <span class="ai-chip">OpenSpec</span>
+        <span class="ai-chip">LLM PR Review</span>
+        <span class="ai-chip">Azure Functions</span>
+        <span class="ai-chip">Azure DevOps</span>
+        <span class="ai-chip">AKS</span>
+        <span class="ai-chip">Docker</span>
+        <span class="ai-chip">AWS</span>
       </div>
     </section>
     <section id="projects" class="relative flex min-w-full flex-col items-center gap-4 p-5">
