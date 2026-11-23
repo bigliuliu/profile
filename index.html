@@ -48,8 +48,8 @@
         <a href="#ai-workflow"
           class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">AI Workflow
         </a>
-        <a href="#projects"
-          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Projects
+        <a href="#ai-projects"
+          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">AI Projects
         </a>
         <a href="#contact"
           class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Contact
@@ -69,7 +69,7 @@
           <a href="#ai-workflow">AI Workflow</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#ai-projects">AI Projects</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
@@ -226,34 +226,14 @@
         <span class="ai-chip">AWS</span>
       </div>
     </section>
-    <section id="projects" class="relative flex min-w-full flex-col items-center gap-4 p-5">
-      <div id="caption-projects" class="text-center">
-        <p class="text-3xl sm:text-4xl md:text-5xl" id="projects-heading">
-          My Projects
-        </p>
-        <p class="p-3 text-xl text-gray-300 sm:text-2xl">
-          Things I've built so far
-        </p>
-      </div>
-      <div id="project-container" class="flex w-4/5 flex-wrap place-content-center justify-center gap-10">
-        <div class="">
-          <img src="" alt="" />
-          <h2 class="mx-3 pt-1 text-xl font-bold underline-offset-1">
-            Project 1
-          </h2>
-          <div class="projectLinkContainer flex w-full items-center justify-between px-4">
-            <a href="">
-              <p class="underline">View Project</p>
-            </a>
-            <a href="">
-              <img src="build/img/footer-github.png" alt="" />
-            </a>
-          </div>
-          <p class="text- m-1 w-4/5 text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cum
-            natus perferendis
-          </p>
-        </div>
+        <section id="ai-projects" class="flex min-w-full flex-col items-center justify-center p-8">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl" id="ai-projects-heading">AI Projects</h2>
+      <p class="p-2 pt-5 text-center text-2xl text-gray-300">Things I've actually built with AI in the loop</p>
+      <div class="ai-grid">
+        <div class="ai-card"><h3>MCP Server · 16 Tools</h3><p>A TypeScript MCP server I built to power my Claude Code plugin — project context, code search and review actions, available right inside the editor.</p></div>
+        <div class="ai-card"><h3>LLM PR Review Pipeline</h3><p>Runs on real PRs: posts line-anchored inline comments against 58 repo-specific rules, and proved itself by catching deliberately injected bugs.</p></div>
+        <div class="ai-card"><h3>AI Automation on Azure</h3><p>Event-driven automation on Azure Functions, triggered by PR and Jira webhooks — deduplicated Slack notifications, a dedicated review path for SQL changes, and automatic Confluence doc sync on Jira closure, with an early-exit cost check to control LLM spend.</p></div>
+        <div class="ai-card"><h3>AI Data Training</h3><p>At SuperAnnotate, I wrote and evaluated coding prompts and ranked model outputs — hands-on experience with how LLMs are trained and judged.</p></div>
       </div>
     </section>
     <section id="contact" class="flex min-h-screen w-full flex-col items-center justify-center p-6">
@@ -292,7 +272,6 @@
       </a>
     </div>
   </footer>
-  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
