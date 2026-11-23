@@ -95,7 +95,7 @@ background-clip:text;
 -webkit-background-clip: text;
 }
 
-#about-me,  #project-container {
+#about-me {
 min-height: 80vh;
 }
 
@@ -107,14 +107,14 @@ min-height: 80vh;
     min-height: 90vh;
 }
 
-#projects{
-    min-height: 125vh;
+#ai-projects{
+    min-height: 70vh;
 }
 #about-me:nth-child(2), #tech-stack p {
 font-family: var(--font-about);
 }
 
-#about-me-caption, #contact h2, #tech-stack-caption, #ai-workflow-caption, #projects-heading {
+#about-me-caption, #contact h2, #tech-stack-caption, #ai-workflow-caption, #ai-projects-heading {
 font-family: var(--font-name);
 }
 
@@ -139,50 +139,6 @@ padding-bottom: 10px;
 min-width: 40px;
 }
 
-.project-card {
-width: max(300px, 24vw);
-aspect-ratio: 3/4;
-background-color: #373637;
-border-radius: 16px;
-box-shadow:1px 1px 5px rgb(96, 96, 96);
-display: flex;
-flex-direction: column;
-/* justify-content: center; */
-align-items: center;
-padding: 5px;
-font-family: var(--font-hero);
-}
-.project-card:hover{
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-}
-
-.project-card img{
-    width: 100%;
-    border-radius: 12px 12px 0 0;
-    aspect-ratio: 1.2;
-    margin-bottom: 10px;
-    object-fit: cover;
-    object-position: top;
-
-}
-.project-card iframe{
-    width: 100%;
-    border-radius: 12px 12px 0 0;
-    aspect-ratio: 1.2;
-    margin-bottom: 10px;
-    object-fit: cover;
-    object-position: top;
-
-}
-.project-card a:hover{
-    color: var(--button-bg-color);
-    transition: all 0.2s linear;
-}
-.projectLinkContainer img{
-    max-width: 30px;
-    aspect-ratio: 1;
-}
 /* forms */
 /* Set font and background color for form */
 #email-form {
