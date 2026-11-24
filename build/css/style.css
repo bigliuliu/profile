@@ -390,6 +390,22 @@ html[data-theme="light"] .icon-moon {
   border-radius: 4px;
 }
 
+/* Light mode: the avatar and icon images are light-on-dark artwork,
+   so they need a dark chip behind them on a white page. */
+html[data-theme="light"] .avatar {
+  background: #0a0a0a;
+  border-color: #0a0a0a;
+}
+
+html[data-theme="light"] .hero-icon {
+  background: #0a0a0a;
+  border: 1px solid #0a0a0a;
+}
+
+html[data-theme="light"] .hero-icon:hover {
+  background: #262626;
+}
+
 .hero-pills {
   display: flex;
   flex-wrap: wrap;
