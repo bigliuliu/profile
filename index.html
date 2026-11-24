@@ -1,309 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="build/css/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=VT323&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="build/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script defer src="build/js/menu.js"></script>
   <script defer src="build/js/email.js"></script>
-  <meta name="description" content="Tiana Lau — Software Engineer at Serko, building the Zeno travel platform. React, TypeScript, C# / .NET, and AI-assisted engineering with Claude Code, MCP and OpenSpec." />
+  <meta name="description"
+    content="Tiana Lau — Software Engineer at Serko, building the Zeno travel platform. React, TypeScript, C# / .NET, and AI-assisted engineering with Claude Code, MCP and OpenSpec." />
   <title>Tiana Lau — Software Engineer</title>
 </head>
 
-<body class="flex min-w-full flex-col items-center text-white bg-zinc-900">
-  <aside id="socials" class="fixed left-0 top-1/3 z-10 hidden flex-col justify-center p-5 lg:flex">
-    <div id="socials-container" class="flex flex-col gap-5">
-      <a href="https://www.linkedin.com/in/tiana-lau-a99303293/" target="_blank">
-        <img src="build/img/linkedin.png" alt="linked"
-          class="h-auto w-8 cursor-pointer rounded-lg duration-300 hover:scale-110 hover:bg-blue-700 hover:transition-all" />
-      </a>
-      <a href="https://github.com/bigliuliu" target="_blank">
-        <img src="build/img/footer-github.png" alt="github"
-          class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all" />
-      </a>
-      <a href="mailto:sweetliu666@gmail.com" target="_blank">
-        <img src="build/img/mail.png" alt="mail"
-          class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all" />
-      </a>
-    </div>
-  </aside>
-  <header class="fixed top-0 z-10 flex h-20 min-w-full justify-center p-2 text-lg text-gray-300 sm:h-24">
-    <div class="header-hero flex w-4/5 items-center justify-between">
-      <img id="logo" src="build/img/logo.jpg" alt="logo" class="block h-full" />
-      <img id="menu" src="build/img/menu.svg" alt="menu" class="block h-1/2 hover:cursor-pointer lg:hidden" />
-      <nav id="navbar" class="hidden gap-8 text-xl lg:flex">
-        <a href="index.html"
-          class="transition-all duration-300 hover:scale-x-105 hover:text-blue-300 hover:ease-in-out">Home
-        </a>
-        <a href="#about-me"
-          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">About
-        </a>
-        <a href="#tech-stack"
-          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Tech Stack
-        </a>
-        <a href="#ai-workflow"
-          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">AI Workflow
-        </a>
-        <a href="#ai-projects"
-          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">AI Projects
-        </a>
-        <a href="#contact"
-          class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Contact
-        </a>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#" class="logo">TIANA</a>
+      <nav class="topnav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#ai-projects">AI Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </div>
-    <div id="dropdownMenu"
-      class="animate_animated animate__slideInDown fixed top-0 left-0 z-20 hidden h-screen w-full flex-col items-center text-3xl lg:hidden">
-      <ul id="links" class="toggle-list w-4/5">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="#about-me">About</a>
-        </li>
-        <li>
-          <a href="#ai-workflow">AI Workflow</a>
-        </li>
-        <li>
-          <a href="#ai-projects">AI Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <main class="flex min-h-screen min-w-full flex-col items-center">
-    <section id="hero" class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full">
-      <div id="hero-wrap" class="flex justify-center lg:gap-16">
-        <div id="intro" class="mx-auto flex flex-col justify-center">
-          <span class="ai-badge animate__animated animate__fadeInUp">✦ AI-assisted engineer</span>
-          <h2 class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl">
-            Hi,
-          </h2>
-          <h2 class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl">
-            My name is
-          </h2>
-          <h3 id="name" class="animate__animated animate__fadeInUp pt-1 pb-1 text-5xl sm:text-6xl md:text-7xl">
-            Tiana Lau
-          </h3>
-          <p class="animate__animated animate__fadeInUp pt-3 text-2xl sm:text-3xl md:text-5xl">
-            I build things for web — with AI in the loop.
-          </p>
-          <p class="terminal-line animate__animated animate__fadeInUp"><span class="terminal-prompt">&gt;</span> Claude Code · MCP · OpenSpec · LLM review<span class="cursor"></span></p>
-          <button id="contactMe"
-            class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl">
-            <a href="#contact">CONTACT ME</a>
-          </button>
-        </div>
-        <figure class="animate__animated animate__fadeInRight flex flex-col justify-center">
-          <img src="build/img/hero-img.png" alt="hero" class="hidden max-w-xs xl:block" />
-        </figure>
-      </div>
-    </section>
-    <section id="about-me" class="flex w-full flex-col items-center justify-center gap-8 p-8">
-      <div class="aboutCard mx-auto min-h-full w-full sm:w-4/6">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl" id="about-me-caption">
-          About Me
-        </h2>
-      </div>
-      <div class="aboutCard min-h-full w-full sm:w-4/6">
-        <p class="text-lg sm:text-xl md:text-3xl lg:text-2xl mb-8">
-          Hi, I'm Tiana Lau — a Software Engineer at Serko, building the Zeno travel platform with React,
-          TypeScript and C# / .NET. I ship with AI in the loop: Claude Code, spec-driven development, and
-          an LLM review pipeline that keeps quality high while I move fast.
-        </p>
-        <section class="mb-8">
-          <h2 class="font-bold mb-2 text-2xl">Work Experience</h2>
-          <div class="mb-4">
-            <h3 class="text-xl font-bold">- Serko - Software Engineer (Nov 2025 – Present)</h3>
-            <ul class="list-disc list-inside ml-4 text-lg text-gray-200">
-              <li>Building the Zeno travel platform with React / TypeScript and C# / .NET, shipped cloud-native via Azure DevOps Pipelines to AKS.</li>
-              <li>Built event-driven automation on Azure Functions triggered by PR and Jira webhooks — deduplicated Slack notifications, a dedicated review path for SQL changes, and automatic Confluence doc sync on Jira closure, with an early-exit cost check to control LLM spend.</li>
-              <li>Ship with AI in the loop: a Claude Code plugin backed by a TypeScript MCP server (16 tools), spec-driven development with OpenSpec, and an LLM PR review pipeline that posts line-anchored inline comments against 58 repo-specific rules.</li>
-            </ul>
-          </div>
-          <div class="mb-4">
-            <h3 class="text-xl font-bold">- Upwork - Freelance Developer (Oct 2023 – Oct 2025)</h3>
-            <ul class="list-disc list-inside ml-4 text-lg  text-gray-200">
-              <li>Developed the website and web app for Atlas KE using Next.js and Tailwind CSS, based on finalized Figma designs. Implemented blockchain-based land and property records, user identity verification, and transaction lookup, with full responsive support.
-              </li>
-              <li>Developed key pages of the Xess app using React Native and TypeScript, leveraging Expo to streamline the development workflow and optimize performance.</li>
-              <li>Developed a Food Delivery website utilizing React.js, Node.js, Express.js, and MongoDB, integrating Stripe for payment processing. The site is fully responsive and optimized for mobile devices, with the backend, frontend, and admin panel all deployed on Render.
-              </li>
-            </ul>
-          </div>
-          <div class="mb-4">
-            <h3 class="text-xl font-bold">- DaHua - Frontend Developer (Apr 2020 – Dec 2022)</h3>
-            <ul class="list-disc list-inside ml-4 text-lg  text-gray-200">
-              <li>Developed and implemented projects leveraging ReactJS, VueJS, Ant Design and SCSS based on completed UI designs.</li>
-              <li>Utilized WebSocket to receive real-time alert notifications from the server.</li>
-              <li>Integrated REST API interactions using Ajax to ensure smooth and effective communication between front-end and back-end systems.</li>
-              <li>Configured CI/CD pipelines with Jenkins, automating the testing and deployment of front-end projects</li>
-              <li>Added unit tests for React components using Jest and backend controllers, business layer using JUnit</li>
-              <li>Collaborated closely with testers to identify and resolve troubleshooting issues, improving overall software quality.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="mb-8">
-          <h2 class="text-2xl font-bold mb-4">Position of Responsibility</h2>
-          <div class="mb-4">
-            <h3 class="text-xl font-bold">- Software Engineer - DaHua (Jun 2020)</h3>
-            <p class="text-gray-200">&nbsp; Efficiently completed development and self-testing.</p>
-          </div>
-        </section>
-
-      </div>
-      <div class="w-full sm:w-4/6">
-        <button
-          class="mx-auto h-10 w-40 rounded-2xl border-2 border-blue-400 bg-transparent text-lg text-blue-200 sm:h-14 sm:w-52 sm:text-2xl">
-          <a href="#contact">CONTACT</a>
+      <div class="topbar-right">
+        <span class="topbar-divider"></span>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button id="menu" class="icon-btn menu-btn" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
       </div>
-    </section>
-    <section id="tech-stack" class="flex min-w-full flex-col items-center justify-center">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl" id="tech-stack-caption">
-        My Tech Stack
-      </h1>
-      <p class="p-2 pt-5 text-center text-2xl text-gray-300">
-        Technologies I've been working with currently
-      </p>
-      <div id="stacks" class="z-0 grid w-3/4 grid-flow-col grid-rows-3 place-content-center gap-x-9 p-5">
-        <img src="build/img/vue.png" alt="ts-1" loading="lazy" class="sm:scale-75" />
-        <img src="https://www.datocms-assets.com/98835/1684410508-image-7.png" alt="ts-1" loading="lazy"
-          class="sm:scale-75" />
-        <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" alt="ts-1" loading="lazy"
-          class="sm:scale-75" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/2275px-React.svg.png" alt="ts-1"
-          loading="lazy" class="sm:scale-75" />
-        <!-- src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" -->
-        <img src="build/img/express.png" alt="ts-1" loading="lazy" class="sm:scale-75" />
-        <img src="build/img/html.png" alt="ts-1" loading="lazy" class="sm:scale-75" />
-        <img src="build/img/css.png" alt="ts-2" loading="lazy" class="sm:scale-75" />
-        <img src="build/img/js.png" alt="ts-3" loading="lazy" class="sm:scale-75" />
-        <img src="build/img/tailwind.png" alt="ts-4" loading="lazy" class="sm:scale-75" />
-        <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="ts-5" loading="lazy"
-          class="sm:scale-75" />
-        <img src="build/img/footer-github.png" alt="ts-7" loading="lazy" class="sm:scale-75" />
-        <img src="build/img/sass.png" alt="ts-8" loading="lazy" class="sm:scale-75" />
-      </div>
-    </section>
-    <section id="ai-workflow" class="flex min-w-full flex-col items-center justify-center p-8">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl" id="ai-workflow-caption">
-        How I Work with AI
-      </h2>
-      <p class="p-2 pt-5 text-center text-2xl text-gray-300">
-        AI isn't a demo for me — it's how I ship every day
-      </p>
-      <div class="ai-grid">
-        <div class="ai-card">
-          <h3>Claude Code Plugin</h3>
-          <p>A custom plugin backed by a TypeScript MCP server with 16 tools — project context, code search and review actions, right inside my editor.</p>
-        </div>
-        <div class="ai-card">
-          <h3>OpenSpec SDD</h3>
-          <p>Spec-driven development: every change starts from a written spec with traceable tasks, so AI-generated code stays aligned with the design.</p>
-        </div>
-        <div class="ai-card">
-          <h3>LLM PR Review</h3>
-          <p>An automated review pipeline that posts line-anchored inline comments against 58 repo-specific rules — validated by catching injected bugs.</p>
-        </div>
-      </div>
-      <div class="ai-chips">
-        <span class="ai-chip">Claude Code</span>
-        <span class="ai-chip">MCP · 16 tools</span>
-        <span class="ai-chip">OpenSpec</span>
-        <span class="ai-chip">LLM PR Review</span>
-        <span class="ai-chip">Azure Functions</span>
-        <span class="ai-chip">Azure DevOps</span>
-        <span class="ai-chip">AKS</span>
-        <span class="ai-chip">Docker</span>
-        <span class="ai-chip">AWS</span>
-      </div>
-    </section>
-        <section id="ai-projects" class="flex min-w-full flex-col items-center justify-center p-8">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl" id="ai-projects-heading">AI Projects</h2>
-      <p class="p-2 pt-5 text-center text-2xl text-gray-300">Things I've actually built with AI in the loop</p>
-      <div class="ai-grid">
-        <div class="ai-card"><h3>MCP Server · 16 Tools</h3><p>A TypeScript MCP server I built to power my Claude Code plugin — project context, code search and review actions, available right inside the editor.</p></div>
-        <div class="ai-card"><h3>LLM PR Review Pipeline</h3><p>Runs on real PRs: posts line-anchored inline comments against 58 repo-specific rules, and proved itself by catching deliberately injected bugs.</p></div>
-        <div class="ai-card"><h3>AI Automation on Azure</h3><p>Event-driven automation on Azure Functions, triggered by PR and Jira webhooks — deduplicated Slack notifications, a dedicated review path for SQL changes, and automatic Confluence doc sync on Jira closure, with an early-exit cost check to control LLM spend.</p></div>
-        <div class="ai-card"><h3>AI Data Training</h3><p>At SuperAnnotate, I wrote and evaluated coding prompts and ranked model outputs — hands-on experience with how LLMs are trained and judged.</p></div>
-      </div>
-    </section>
-    <section id="contact" class="flex min-h-screen w-full flex-col items-center justify-center p-6">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl">Get in Touch</h2>
-      <p class="pt-4 text-center text-2xl text-gray-300">
-        I'd love to hear from you!
-      </p>
-      <section id="form-container" class="flex flex-wrap items-center justify-center xl:gap-4">
-        <form id="email-form">
-          <label for="fullName">Full Name:</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+    </div>
+    <nav id="dropdownMenu" class="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#ai-projects">AI Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Your Email ID" required>
+  <aside class="toc">
+    <p class="toc-label">On this page</p>
+    <a href="#about" data-spy="about">About</a>
+    <a href="#experience" data-spy="experience">Experience</a>
+    <a href="#ai-projects" data-spy="ai-projects">AI Projects</a>
+    <a href="#skills" data-spy="skills">Skills</a>
+    <a href="#education" data-spy="education">Education</a>
+    <a href="#achievements" data-spy="achievements">Achievements</a>
+    <a href="#contact" data-spy="contact">Contact</a>
+  </aside>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+  <main class="column">
+    <section class="hero">
+      <div class="hero-status">
+        <p>Open to full-time roles</p>
+        <p>Software Engineer · Full-Stack · AI-assisted</p>
+      </div>
+      <div class="hero-main">
+        <img src="build/img/logo.jpg" alt="Tiana Lau" class="avatar" />
+        <h1>Tiana Lau</h1>
+        <p class="hero-role">Software Engineer @ Serko</p>
+        <div class="hero-links">
+          <a href="mailto:sweetliu666@gmail.com" class="hero-icon" aria-label="Email">
+            <img src="build/img/mail.png" alt="email" />
+          </a>
+          <a href="https://github.com/bigliuliu" target="_blank" class="hero-icon" aria-label="GitHub">
+            <img src="build/img/footer-github.png" alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/tiana-liu-a99303293/" target="_blank" class="hero-icon"
+            aria-label="LinkedIn">
+            <img src="build/img/linkedin.png" alt="linkedin" />
+          </a>
+        </div>
+        <div class="hero-pills">
+          <span class="visitor-pill">Hello, visitor</span>
+          <button id="copy-agents" class="copy-btn">Copy for agents</button>
+        </div>
+      </div>
+    </section>
 
-          <button type="button" id="submit-btn" class="items-center justify-center">Submit</button>
-        </form>
-        <figure class="m-4 hidden flex-col items-center justify-center lg:flex">
-          <img src="build/img/contact.png" alt="contact" class="hidden max-h-full max-w-full xl:block" />
-        </figure>
-      </section>
-      <img src="build/img/my-socials.png" alt="my-socials" class="mx-auto block lg:hidden h-72" />
+    <section id="about" class="section">
+      <h2>About</h2>
+      <ul class="about-list">
+        <li>I'm Tiana Lau, a <strong>Software Engineer at Serko</strong> in Xi'an, building the Zeno travel
+          platform with React, TypeScript and C# / .NET — 6 years of professional experience across full-stack web
+          and mobile.</li>
+        <li>I ship with <strong>AI in the loop</strong>: a Claude Code plugin backed by a 16-tool TypeScript MCP
+          server, spec-driven development with OpenSpec, and an LLM review pipeline that keeps quality high while I
+          move fast.</li>
+        <li>I'm looking for an <strong>English-language engineering team</strong> — Xi'an-based or fully remote —
+          where AI-assisted engineering is the norm, not a demo.</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <h3><a href="https://www.serko.com/" target="_blank">Serko</a></h3>
+        <button class="role-head" type="button">
+          <span class="role-title">Software Engineer</span>
+          <span class="role-meta">
+            <span><span class="meta-label">Employment Type</span>Full-time · Hybrid</span>
+            <span><span class="meta-label">Employment Period</span>Nov 2025 — Present</span>
+            <span><span class="meta-label">Duration</span>1 yr</span>
+          </span>
+        </button>
+        <ul class="bullets">
+          <li>Building the <strong>Zeno travel platform</strong> with React / TypeScript and C# / .NET, shipped
+            cloud-native via Azure DevOps Pipelines to AKS.</li>
+          <li>Built event-driven automation on <strong>Azure Functions</strong> triggered by PR and Jira webhooks —
+            deduplicated Slack notifications, a dedicated review path for SQL changes, and automatic Confluence doc
+            sync on Jira closure, with an early-exit cost check to control LLM spend.</li>
+          <li>Ship with <strong>AI in the loop</strong>: a Claude Code plugin backed by a TypeScript MCP server (16
+            tools), spec-driven development with OpenSpec, and an LLM PR review pipeline that posts line-anchored
+            inline comments against 58 repo-specific rules.</li>
+        </ul>
+        <div class="pills">
+          <span>React</span><span>TypeScript</span><span>C# / .NET</span><span>Azure Functions</span><span>Azure
+            DevOps</span><span>AKS</span><span>MCP</span><span>OpenSpec</span>
+        </div>
+      </article>
+
+      <article class="job">
+        <h3>Upwork</h3>
+        <button class="role-head" type="button">
+          <span class="role-title">Freelance Developer</span>
+          <span class="role-meta">
+            <span><span class="meta-label">Employment Type</span>Freelance · Remote</span>
+            <span><span class="meta-label">Employment Period</span>Oct 2023 — Oct 2025</span>
+            <span><span class="meta-label">Duration</span>2 yrs</span>
+          </span>
+        </button>
+        <ul class="bullets">
+          <li>Developed the website and web app for <strong>Atlas KE</strong> using Next.js and Tailwind CSS, based
+            on finalized Figma designs — including blockchain-based land and property records, user identity
+            verification, and transaction lookup.</li>
+          <li>Developed key pages of the <strong>Xess app</strong> using React Native and TypeScript, leveraging
+            Expo to streamline the development workflow.</li>
+          <li>Built a <strong>Food Delivery</strong> website with React.js, Node.js, Express.js, and MongoDB,
+            integrating Stripe for payment processing, with backend, frontend, and admin panel deployed on Render.
+          </li>
+        </ul>
+        <div class="pills">
+          <span>Next.js</span><span>React Native</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+        </div>
+      </article>
+
+      <article class="job">
+        <h3>Dahua Technology</h3>
+        <button class="role-head" type="button">
+          <span class="role-title">Frontend Developer</span>
+          <span class="role-meta">
+            <span><span class="meta-label">Employment Type</span>Full-time · On-site</span>
+            <span><span class="meta-label">Employment Period</span>Apr 2020 — Dec 2022</span>
+            <span><span class="meta-label">Duration</span>2 yrs 9 mos</span>
+          </span>
+        </button>
+        <ul class="bullets">
+          <li>Developed and implemented projects leveraging <strong>ReactJS, VueJS, Ant Design and SCSS</strong>
+            based on completed UI designs.</li>
+          <li>Utilized <strong>WebSocket</strong> to receive real-time alert notifications from the server, and
+            integrated REST API interactions using Ajax.</li>
+          <li>Configured <strong>CI/CD pipelines with Jenkins</strong>, automating the testing and deployment of
+            front-end projects, and added unit tests with Jest and JUnit.</li>
+        </ul>
+        <div class="pills">
+          <span>React</span><span>Vue.js</span><span>WebSocket</span><span>Jenkins</span><span>Jest</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="ai-projects" class="section">
+      <h2>AI Projects</h2>
+      <p class="section-sub">Things I've actually built with AI in the loop</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>MCP Server · 16 Tools</h3>
+          <p>A TypeScript MCP server I built to power my Claude Code plugin — project context, code search and
+            review actions, available right inside the editor.</p>
+          <div class="pills"><span>TypeScript</span><span>MCP</span><span>Claude Code</span></div>
+        </article>
+        <article class="project-card">
+          <h3>LLM PR Review Pipeline</h3>
+          <p>Runs on real PRs: posts line-anchored inline comments against 58 repo-specific rules, and proved
+            itself by catching deliberately injected bugs.</p>
+          <div class="pills"><span>LLM</span><span>Azure Functions</span><span>GitHub</span></div>
+        </article>
+        <article class="project-card">
+          <h3>AI Automation on Azure</h3>
+          <p>Event-driven automation on Azure Functions, triggered by PR and Jira webhooks — deduplicated Slack
+            notifications, a dedicated review path for SQL changes, and automatic Confluence doc sync on Jira
+            closure, with an early-exit cost check to control LLM spend.</p>
+          <div class="pills"><span>Azure Functions</span><span>Webhooks</span><span>Slack</span></div>
+        </article>
+        <article class="project-card">
+          <h3>AI Data Training</h3>
+          <p>At SuperAnnotate, I wrote and evaluated coding prompts and ranked model outputs — hands-on experience
+            with how LLMs are trained and judged.</p>
+          <div class="pills"><span>Prompt Engineering</span><span>Model Evaluation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-rows">
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-num">01</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="pills"><span>TypeScript</span><span>JavaScript</span><span>C#</span><span>SQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-num">02</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="pills"><span>React</span><span>Next.js</span><span>React
+              Native</span><span>Vue.js</span><span>Tailwind CSS</span><span>Ant Design</span><span>SCSS</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-num">03</span>
+            <h3>Backend &amp; APIs</h3>
+          </div>
+          <div class="pills"><span>Node.js</span><span>Express.js</span><span>ASP.NET
+              Core</span><span>REST APIs</span><span>WebSocket</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-num">04</span>
+            <h3>Cloud &amp; DevOps</h3>
+          </div>
+          <div class="pills"><span>Azure Functions</span><span>Azure DevOps</span><span>AKS</span><span>Docker</span><span>AWS</span><span>Jenkins</span><span>CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-num">05</span>
+            <h3>AI</h3>
+          </div>
+          <div class="pills"><span>Claude Code</span><span>MCP</span><span>OpenSpec</span><span>LLM PR
+              Review</span><span>Agentic Coding</span><span>Prompt Engineering</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-num">06</span>
+            <h3>Data</h3>
+          </div>
+          <div class="pills"><span>MongoDB</span><span>MySQL</span><span>MSSQL</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span class="skill-num">07</span>
+            <h3>Currently Learning</h3>
+          </div>
+          <div class="pills"><span>Java</span><span>Spring Boot</span><span>MyBatis</span><span>Python</span><span>Redis</span><span>RabbitMQ</span><span
+              class="learning-note">still learning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <article class="edu">
+        <h3>Xidian University</h3>
+        <p>Master of Engineering in Software Engineering</p>
+        <p class="muted">Sep 2017 – Jul 2020</p>
+      </article>
+      <article class="edu">
+        <h3>Xi'an Aeronautical Institute</h3>
+        <p>Bachelor of Engineering in Computer Science and Technology</p>
+        <p class="muted">Sep 2013 – Jul 2017</p>
+      </article>
+    </section>
+
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <ul class="bullets">
+        <li><strong>AWS Certified Developer</strong> — Associate-level certification for building and deploying
+          applications on AWS.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Scrolled Too Far</h2>
+      <p class="section-sub">You made it to the bottom — say hi, I'd love to hear from you.</p>
+      <form id="email-form">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your Name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email ID" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+
+        <button type="button" id="submit-btn">Submit</button>
+      </form>
+      <p class="contact-alt">Or reach me directly at <a
+          href="mailto:sweetliu666@gmail.com">sweetliu666@gmail.com</a></p>
+    </section>
+
+    <section class="quote">
+      <p class="quote-text">“Make it work, make it right, make it fast.”</p>
+      <p class="quote-attr"><span class="quote-rule"></span>Kent Beck<span class="quote-rule"></span></p>
     </section>
   </main>
-  <footer class="flex h-14 w-4/5 items-center justify-center p-5 text-gray-200 sm:justify-between">
-    <p class="hidden sm:inline">sweetliu666@gmail.com</p>
-    <div id="footer-img-wrap" class="flex gap-2">
-      <a href="https://github.com/bigliuliu" target="_blank">
-        <img src="build/img/footer-github.png" alt="github" class="h-9 w-9" />
-      </a>
-      <a href="https://www.linkedin.com/in/tiana-lau-a99303293/" target="_blank">
-        <img src="build/img/linkedin.png" alt="linkedin" class="h-9 w-9" />
-      </a>
-    </div>
+
+  <footer>
+    <p>© 2026 <strong>Tiana Lau</strong> · Crafted in Xi'an, China.</p>
+    <p class="muted">Style inspired by <a href="https://www.avesh.tech/" target="_blank">avesh.tech</a></p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
     (function () {
-      // emailjs.init("9-9D0S522SqIcmLbr");
       emailjs.init({
         publicKey: 'lZo3_0SwmgDYU26LH'
       });
     })();
-// do this for 30 seconds
-var duration = 3 * 1000;
-var end = Date.now() + duration;
-(function frame() {
-  // launch a few confetti from the left edge
-  confetti({
-    particleCount: 3,
-    angle: 60,
-    spread: 55,
-    origin: { x: 0 }
-  });
-  // and launch a few from the right edge
-  confetti({
-    particleCount: 3,
-    angle: 120,
-    spread: 55,
-    origin: { x: 1 }
-  });
-  // keep going until we are out of time
-  if (Date.now() < end) {
-    requestAnimationFrame(frame);
-  }
-}());
   </script>
 </body>
 
