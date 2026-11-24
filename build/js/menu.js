@@ -52,6 +52,18 @@ if (tocLinks.length && sections.length && "IntersectionObserver" in window) {
   sections.forEach((section) => spy.observe(section));
 }
 
+// Experience accordions (first job open, the rest collapsed)
+document.querySelectorAll(".job").forEach((job) => {
+  const head = job.querySelector(".role-head");
+  const label = job.querySelector(".toggle-label");
+  if (!head) return;
+  head.addEventListener("click", () => {
+    const collapsed = job.classList.toggle("collapsed");
+    head.setAttribute("aria-expanded", String(!collapsed));
+    if (label) label.textContent = collapsed ? "Show details" : "Hide details";
+  });
+});
+
 // Copy for agents
 const copyBtn = document.getElementById("copy-agents");
 if (copyBtn) {
