@@ -74,6 +74,7 @@
     <p class="toc-label">On this page</p>
     <a href="#about" data-spy="about">About</a>
     <a href="#experience" data-spy="experience">Experience</a>
+    <a href="#contributions" data-spy="contributions">Contributions</a>
     <a href="#ai-projects" data-spy="ai-projects">AI Projects</a>
     <a href="#skills" data-spy="skills">Skills</a>
     <a href="#education" data-spy="education">Education</a>
@@ -88,7 +89,7 @@
         <p>Software Engineer · Full-Stack · AI-assisted</p>
       </div>
       <div class="hero-main">
-        <img src="build/img/logo.jpg" alt="Tiana Lau" class="avatar" />
+        <img src="build/img/avatar.jpg" alt="Tiana Lau" class="avatar" />
         <h1>Tiana Lau</h1>
         <p class="hero-role">Software Engineer @ Serko</p>
         <div class="hero-links">
@@ -110,17 +111,22 @@
       </div>
     </section>
 
+    <section class="stats">
+      <div class="stat"><span class="stat-num">6+</span><span class="stat-label">years of experience</span></div>
+      <div class="stat"><span class="stat-num">16</span><span class="stat-label">MCP tools built</span></div>
+      <div class="stat"><span class="stat-num">58</span><span class="stat-label">PR review rules</span></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">companies</span></div>
+    </section>
+
     <section id="about" class="section">
       <h2>About</h2>
       <ul class="about-list">
         <li>I'm Tiana Lau, a <strong>Software Engineer at Serko</strong> in Xi'an, building the Zeno travel
-          platform with React, TypeScript and C# / .NET — 6 years of professional experience across full-stack web
-          and mobile.</li>
-        <li>I ship with <strong>AI in the loop</strong>: a Claude Code plugin backed by a 16-tool TypeScript MCP
-          server, spec-driven development with OpenSpec, and an LLM review pipeline that keeps quality high while I
-          move fast.</li>
-        <li>I'm looking for an <strong>English-language engineering team</strong> — Xi'an-based or fully remote —
-          where AI-assisted engineering is the norm, not a demo.</li>
+          platform with React, TypeScript and C# / .NET — 6+ years across full-stack web and mobile.</li>
+        <li>I ship with <strong>AI in the loop</strong>: a 16-tool TypeScript MCP server powering my Claude Code
+          plugin, spec-driven development with OpenSpec, and an LLM review pipeline — and I'm looking for an
+          <strong>English-language team</strong>, in Xi'an or fully remote, where that is the norm, not a demo.
+        </li>
       </ul>
     </section>
 
@@ -129,77 +135,157 @@
 
       <article class="job">
         <h3><a href="https://www.serko.com/" target="_blank">Serko</a></h3>
-        <button class="role-head" type="button">
-          <span class="role-title">Software Engineer</span>
+        <button class="role-head" type="button" aria-expanded="true">
+          <span class="role-head-top">
+            <span class="role-title">Software Engineer</span>
+            <span class="role-toggle"><span class="toggle-label">Hide details</span><span
+                class="chevron">▾</span></span>
+          </span>
           <span class="role-meta">
             <span><span class="meta-label">Employment Type</span>Full-time · Hybrid</span>
             <span><span class="meta-label">Employment Period</span>Nov 2025 — Present</span>
             <span><span class="meta-label">Duration</span>1 yr</span>
           </span>
         </button>
-        <ul class="bullets">
-          <li>Building the <strong>Zeno travel platform</strong> with React / TypeScript and C# / .NET, shipped
-            cloud-native via Azure DevOps Pipelines to AKS.</li>
-          <li>Built event-driven automation on <strong>Azure Functions</strong> triggered by PR and Jira webhooks —
-            deduplicated Slack notifications, a dedicated review path for SQL changes, and automatic Confluence doc
-            sync on Jira closure, with an early-exit cost check to control LLM spend.</li>
-          <li>Ship with <strong>AI in the loop</strong>: a Claude Code plugin backed by a TypeScript MCP server (16
-            tools), spec-driven development with OpenSpec, and an LLM PR review pipeline that posts line-anchored
-            inline comments against 58 repo-specific rules.</li>
-        </ul>
-        <div class="pills">
-          <span>React</span><span>TypeScript</span><span>C# / .NET</span><span>Azure Functions</span><span>Azure
-            DevOps</span><span>AKS</span><span>MCP</span><span>OpenSpec</span>
+        <div class="job-body">
+          <ul class="bullets">
+            <li>Building the <strong>Zeno travel platform</strong> with React / TypeScript and C# / .NET, shipped
+              cloud-native via Azure DevOps Pipelines to AKS.</li>
+            <li>Built event-driven automation on <strong>Azure Functions</strong> triggered by PR and Jira webhooks
+              — deduplicated Slack notifications, a dedicated review path for SQL changes, and automatic Confluence
+              doc sync on Jira closure, with an early-exit cost check to control LLM spend.</li>
+            <li>Ship with <strong>AI in the loop</strong>: a Claude Code plugin backed by a TypeScript MCP server
+              (16 tools), spec-driven development with OpenSpec, and an LLM PR review pipeline that posts
+              line-anchored inline comments against 58 repo-specific rules.</li>
+          </ul>
+          <div class="pills">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="" loading="lazy" />React</span>
+            <span><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt="" loading="lazy" />TypeScript</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                alt="" loading="lazy" />C# / .NET</span>
+            <span>Azure Functions</span><span>Azure DevOps</span><span>AKS</span><span>MCP</span><span>OpenSpec</span>
+          </div>
         </div>
       </article>
 
-      <article class="job">
+      <article class="job collapsed">
         <h3>Upwork</h3>
-        <button class="role-head" type="button">
-          <span class="role-title">Freelance Developer</span>
+        <button class="role-head" type="button" aria-expanded="false">
+          <span class="role-head-top">
+            <span class="role-title">Freelance Developer</span>
+            <span class="role-toggle"><span class="toggle-label">Show details</span><span
+                class="chevron">▾</span></span>
+          </span>
           <span class="role-meta">
             <span><span class="meta-label">Employment Type</span>Freelance · Remote</span>
             <span><span class="meta-label">Employment Period</span>Oct 2023 — Oct 2025</span>
             <span><span class="meta-label">Duration</span>2 yrs</span>
           </span>
         </button>
-        <ul class="bullets">
-          <li>Developed the website and web app for <strong>Atlas KE</strong> using Next.js and Tailwind CSS, based
-            on finalized Figma designs — including blockchain-based land and property records, user identity
-            verification, and transaction lookup.</li>
-          <li>Developed key pages of the <strong>Xess app</strong> using React Native and TypeScript, leveraging
-            Expo to streamline the development workflow.</li>
-          <li>Built a <strong>Food Delivery</strong> website with React.js, Node.js, Express.js, and MongoDB,
-            integrating Stripe for payment processing, with backend, frontend, and admin panel deployed on Render.
-          </li>
-        </ul>
-        <div class="pills">
-          <span>Next.js</span><span>React Native</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+        <div class="job-body">
+          <ul class="bullets">
+            <li>Developed the website and web app for <strong>Atlas KE</strong> using Next.js and Tailwind CSS,
+              based on finalized Figma designs — including blockchain-based land and property records, user identity
+              verification, and transaction lookup.</li>
+            <li>Developed key pages of the <strong>Xess app</strong> using React Native and TypeScript, leveraging
+              Expo to streamline the development workflow.</li>
+            <li>Built a <strong>Food Delivery</strong> website with React.js, Node.js, Express.js, and MongoDB,
+              integrating Stripe for payment processing, with backend, frontend, and admin panel deployed on Render.
+            </li>
+          </ul>
+          <div class="pills">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                alt="" loading="lazy" class="icon-invert" />Next.js</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="" loading="lazy" />React Native</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                alt="" loading="lazy" />Node.js</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                alt="" loading="lazy" />MongoDB</span>
+            <span>Stripe</span>
+          </div>
         </div>
       </article>
 
-      <article class="job">
+      <article class="job collapsed">
+        <h3>Xi'an Jiaotong University</h3>
+        <button class="role-head" type="button" aria-expanded="false">
+          <span class="role-head-top">
+            <span class="role-title">Software Engineer</span>
+            <span class="role-toggle"><span class="toggle-label">Show details</span><span
+                class="chevron">▾</span></span>
+          </span>
+          <span class="role-meta">
+            <span><span class="meta-label">Employment Type</span>Full-time · On-site</span>
+            <span><span class="meta-label">Employment Period</span>Dec 2022 — Aug 2023</span>
+            <span><span class="meta-label">Duration</span>9 mos</span>
+          </span>
+        </button>
+        <div class="job-body">
+          <ul class="bullets">
+            <li>Built a <strong>Web3 pearl NFT trading platform</strong> with MetaMask wallet integration for
+              minting, trading and publishing NFTs.</li>
+            <li>Designed and developed the front end with <strong>TypeScript, Vue3 and Ant Design</strong>, with
+              ECharts dashboards tracking NFT transactions and price history in real time.</li>
+            <li>Led <strong>UX design with Axure RP</strong>, collaborating with UI designers on product design.
+            </li>
+          </ul>
+          <div class="pills">
+            <span><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt="" loading="lazy" />TypeScript</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                alt="" loading="lazy" />Vue.js</span>
+            <span>Ant Design</span><span>ECharts</span><span>MetaMask</span><span>Axure RP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="job collapsed">
         <h3>Dahua Technology</h3>
-        <button class="role-head" type="button">
-          <span class="role-title">Frontend Developer</span>
+        <button class="role-head" type="button" aria-expanded="false">
+          <span class="role-head-top">
+            <span class="role-title">Frontend Developer</span>
+            <span class="role-toggle"><span class="toggle-label">Show details</span><span
+                class="chevron">▾</span></span>
+          </span>
           <span class="role-meta">
             <span><span class="meta-label">Employment Type</span>Full-time · On-site</span>
             <span><span class="meta-label">Employment Period</span>Apr 2020 — Dec 2022</span>
             <span><span class="meta-label">Duration</span>2 yrs 9 mos</span>
           </span>
         </button>
-        <ul class="bullets">
-          <li>Developed and implemented projects leveraging <strong>ReactJS, VueJS, Ant Design and SCSS</strong>
-            based on completed UI designs.</li>
-          <li>Utilized <strong>WebSocket</strong> to receive real-time alert notifications from the server, and
-            integrated REST API interactions using Ajax.</li>
-          <li>Configured <strong>CI/CD pipelines with Jenkins</strong>, automating the testing and deployment of
-            front-end projects, and added unit tests with Jest and JUnit.</li>
-        </ul>
-        <div class="pills">
-          <span>React</span><span>Vue.js</span><span>WebSocket</span><span>Jenkins</span><span>Jest</span>
+        <div class="job-body">
+          <ul class="bullets">
+            <li>Developed and implemented projects leveraging <strong>ReactJS, VueJS, Ant Design and SCSS</strong>
+              based on completed UI designs.</li>
+            <li>Utilized <strong>WebSocket</strong> to receive real-time alert notifications from the server, and
+              integrated REST API interactions using Ajax.</li>
+            <li>Configured <strong>CI/CD pipelines with Jenkins</strong>, automating the testing and deployment of
+              front-end projects, and added unit tests with Jest and JUnit.</li>
+          </ul>
+          <div class="pills">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="" loading="lazy" />React</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                alt="" loading="lazy" />Vue.js</span>
+            <span>WebSocket</span><span>Jenkins</span><span>Jest</span>
+          </div>
         </div>
       </article>
+    </section>
+
+    <section id="contributions" class="section">
+      <h2>Contributions</h2>
+      <a href="https://github.com/bigliuliu" target="_blank" class="contrib-link">
+        <img src="https://ghchart.rshah.org/ff996b/bigliuliu" alt="Tiana Lau's GitHub contributions in the last year"
+          loading="lazy" />
+      </a>
+      <p class="muted contrib-caption"><a href="https://github.com/bigliuliu"
+          target="_blank">@bigliuliu</a> on GitHub</p>
     </section>
 
     <section id="ai-projects" class="section">
@@ -207,28 +293,35 @@
       <p class="section-sub">Things I've actually built with AI in the loop</p>
       <div class="project-grid">
         <article class="project-card">
+          <div class="project-thumb"><span class="thumb-dot"></span><span class="thumb-dot"></span><span
+              class="thumb-dot"></span><code>mcp-server · 16 tools · typescript</code></div>
           <h3>MCP Server · 16 Tools</h3>
-          <p>A TypeScript MCP server I built to power my Claude Code plugin — project context, code search and
-            review actions, available right inside the editor.</p>
+          <p>A TypeScript MCP server powering my Claude Code plugin — project context, code search and review
+            actions, right inside the editor.</p>
           <div class="pills"><span>TypeScript</span><span>MCP</span><span>Claude Code</span></div>
         </article>
         <article class="project-card">
+          <div class="project-thumb"><span class="thumb-dot"></span><span class="thumb-dot"></span><span
+              class="thumb-dot"></span><code>pr-review · 58 rules · 4 repos</code></div>
           <h3>LLM PR Review Pipeline</h3>
-          <p>Runs on real PRs: posts line-anchored inline comments against 58 repo-specific rules, and proved
-            itself by catching deliberately injected bugs.</p>
+          <p>Runs on real PRs across 4 core repos, posting line-anchored comments against 58 repo-specific rules —
+            proven by catching injected bugs.</p>
           <div class="pills"><span>LLM</span><span>Azure Functions</span><span>GitHub</span></div>
         </article>
         <article class="project-card">
+          <div class="project-thumb"><span class="thumb-dot"></span><span class="thumb-dot"></span><span
+              class="thumb-dot"></span><code>azure-functions · pr + jira webhooks</code></div>
           <h3>AI Automation on Azure</h3>
-          <p>Event-driven automation on Azure Functions, triggered by PR and Jira webhooks — deduplicated Slack
-            notifications, a dedicated review path for SQL changes, and automatic Confluence doc sync on Jira
-            closure, with an early-exit cost check to control LLM spend.</p>
+          <p>PR and Jira webhooks trigger Azure Functions: deduped Slack notifications, a SQL-change review path,
+            and Confluence sync on Jira closure.</p>
           <div class="pills"><span>Azure Functions</span><span>Webhooks</span><span>Slack</span></div>
         </article>
         <article class="project-card">
+          <div class="project-thumb"><span class="thumb-dot"></span><span class="thumb-dot"></span><span
+              class="thumb-dot"></span><code>superannotate · prompts + evals</code></div>
           <h3>AI Data Training</h3>
-          <p>At SuperAnnotate, I wrote and evaluated coding prompts and ranked model outputs — hands-on experience
-            with how LLMs are trained and judged.</p>
+          <p>At SuperAnnotate I wrote and evaluated coding prompts and ranked model outputs — hands-on with how
+            LLMs are trained and judged.</p>
           <div class="pills"><span>Prompt Engineering</span><span>Model Evaluation</span></div>
         </article>
       </div>
@@ -241,29 +334,62 @@
           <div class="skill-label"><span class="skill-num">01</span>
             <h3>Languages</h3>
           </div>
-          <div class="pills"><span>TypeScript</span><span>JavaScript</span><span>C#</span><span>SQL</span><span>HTML</span><span>CSS</span>
+          <div class="pills">
+            <span><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt="" loading="lazy" />TypeScript</span>
+            <span><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="" loading="lazy" />JavaScript</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                alt="" loading="lazy" />C#</span>
+            <span>SQL</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="" loading="lazy" />HTML</span>
           </div>
         </div>
         <div class="skill-row">
           <div class="skill-label"><span class="skill-num">02</span>
             <h3>Frontend</h3>
           </div>
-          <div class="pills"><span>React</span><span>Next.js</span><span>React
-              Native</span><span>Vue.js</span><span>Tailwind CSS</span><span>Ant Design</span><span>SCSS</span>
+          <div class="pills">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="" loading="lazy" />React</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                alt="" loading="lazy" class="icon-invert" />Next.js</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="" loading="lazy" />React Native</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                alt="" loading="lazy" />Vue.js</span>
+            <span><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                alt="" loading="lazy" />Tailwind CSS</span>
           </div>
         </div>
         <div class="skill-row">
           <div class="skill-label"><span class="skill-num">03</span>
             <h3>Backend &amp; APIs</h3>
           </div>
-          <div class="pills"><span>Node.js</span><span>Express.js</span><span>ASP.NET
-              Core</span><span>REST APIs</span><span>WebSocket</span></div>
+          <div class="pills">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                alt="" loading="lazy" />Node.js</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                alt="" loading="lazy" class="icon-invert" />Express.js</span>
+            <span><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+                alt="" loading="lazy" />ASP.NET Core</span>
+            <span>REST APIs</span>
+          </div>
         </div>
         <div class="skill-row">
           <div class="skill-label"><span class="skill-num">04</span>
             <h3>Cloud &amp; DevOps</h3>
           </div>
-          <div class="pills"><span>Azure Functions</span><span>Azure DevOps</span><span>AKS</span><span>Docker</span><span>AWS</span><span>Jenkins</span><span>CI/CD</span>
+          <div class="pills">
+            <span>Azure Functions</span><span>Azure DevOps</span><span>AKS</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                alt="" loading="lazy" />Docker</span>
+            <span>AWS</span>
           </div>
         </div>
         <div class="skill-row">
@@ -271,22 +397,43 @@
             <h3>AI</h3>
           </div>
           <div class="pills"><span>Claude Code</span><span>MCP</span><span>OpenSpec</span><span>LLM PR
-              Review</span><span>Agentic Coding</span><span>Prompt Engineering</span></div>
+              Review</span><span>Agentic Coding</span></div>
         </div>
         <div class="skill-row">
           <div class="skill-label"><span class="skill-num">06</span>
             <h3>Data</h3>
           </div>
-          <div class="pills"><span>MongoDB</span><span>MySQL</span><span>MSSQL</span></div>
+          <div class="pills">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                alt="" loading="lazy" />MongoDB</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                alt="" loading="lazy" />MySQL</span>
+            <span>MSSQL</span>
+          </div>
         </div>
         <div class="skill-row">
           <div class="skill-label"><span class="skill-num">07</span>
             <h3>Currently Learning</h3>
           </div>
-          <div class="pills"><span>Java</span><span>Spring Boot</span><span>MyBatis</span><span>Python</span><span>Redis</span><span>RabbitMQ</span><span
-              class="learning-note">still learning</span></div>
+          <div class="pills">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt=""
+                loading="lazy" />Java</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                alt="" loading="lazy" />Spring Boot</span>
+            <span>MyBatis</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                alt="" loading="lazy" />Python</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
+                alt="" loading="lazy" />Redis</span>
+            <span><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg" alt=""
+                loading="lazy" />RabbitMQ</span>
+            <span class="learning-note">still learning</span>
+          </div>
         </div>
       </div>
+      <p class="also-line">Also: Ant Design · SCSS · Redux · Storybook · ECharts · Jenkins · CI/CD · WebSocket ·
+        Stripe · Jest · Jira · Confluence</p>
     </section>
 
     <section id="education" class="section">
@@ -306,8 +453,7 @@
     <section id="achievements" class="section">
       <h2>Achievements</h2>
       <ul class="bullets">
-        <li><strong>AWS Certified Developer</strong> — Associate-level certification for building and deploying
-          applications on AWS.</li>
+        <li><strong>AWS Certified Developer</strong> — Associate, Jul 2024.</li>
       </ul>
     </section>
 
