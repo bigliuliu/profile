@@ -510,7 +510,44 @@ html[data-theme="light"] .hero-icon:hover {
   border: none;
   text-align: left;
   font-family: var(--font-sans);
-  cursor: default;
+  cursor: pointer;
+}
+
+.role-head-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.role-toggle {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.role-toggle .toggle-label {
+  color: var(--yellow);
+  font-weight: 500;
+}
+
+.role-toggle .chevron {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.job.collapsed .job-body {
+  display: none;
+}
+
+.job.collapsed .chevron {
+  transform: rotate(-90deg);
+}
+
+.job.collapsed .role-head {
+  margin-bottom: 0;
 }
 
 .role-title {
@@ -551,12 +588,24 @@ html[data-theme="light"] .hero-icon:hover {
 }
 
 .pills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 6px 10px;
   font-size: 13px;
   color: var(--body);
   background: var(--pill-bg);
   border: 1px solid var(--border);
   border-radius: 6px;
+}
+
+.pills img {
+  width: 16px;
+  height: 16px;
+}
+
+html[data-theme="dark"] .pills img.icon-invert {
+  filter: invert(1);
 }
 
 .pills .learning-note {
@@ -809,6 +858,108 @@ footer a {
   color: var(--muted);
 }
 
+/* ---------- stats strip ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.stat-num {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--yellow);
+}
+
+.stat-label {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- contributions ---------- */
+.contrib-link {
+  display: block;
+}
+
+.contrib-link:hover {
+  text-decoration: none;
+}
+
+.contrib-link img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+}
+
+.contrib-caption {
+  margin: 12px 0 0;
+  font-size: 13px;
+}
+
+.contrib-caption a {
+  color: var(--meta);
+}
+
+/* ---------- project terminal thumbs ---------- */
+.project-thumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  background: #111111;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-thumb code {
+  margin-left: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #7ee2a8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thumb-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #404040;
+}
+
+.thumb-dot:first-child {
+  background: #ff5f57;
+}
+
+.thumb-dot:nth-child(2) {
+  background: #febc2e;
+}
+
+.thumb-dot:nth-child(3) {
+  background: #28c840;
+}
+
+/* ---------- also line ---------- */
+.also-line {
+  margin: 20px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 /* ---------- small screens ---------- */
 @media (max-width: 767px) {
   .topnav {
@@ -822,6 +973,11 @@ footer a {
   .role-meta {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 12px;
   }
 
   .section {
